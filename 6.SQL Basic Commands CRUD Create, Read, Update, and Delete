@@ -4,7 +4,7 @@ Perfect for both beginners and professionals to master SQL easily. Check it out 
 
 ====================================================================================
 
-
+show datavases;
 
 1. Create Database:
    CREATE DATABASE de_project;
