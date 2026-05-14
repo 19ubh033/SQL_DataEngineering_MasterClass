@@ -68,7 +68,21 @@ WHERE email = NULL;  -- > Invalid
 
 
 COLAESCE
-  -------
+
+COALESCE function is used to handle multiple arguments by returning the first non-null value in a list.
+When you provide multiple arguments to COALESCE(val1, val2, val3, ...), the engine evaluates them from left to right.
+
+If val1 is not null, it returns val1 and stops.
+If val1 is null, it moves to val2.
+If all arguments are null, the function returns NULL.
+
+
+If you have a database where users might provide a home phone, a work phone, or a mobile number, you can use COALESCE to find the best way to reach them.
+
+Logic Simplification: It replaces long, nested IF-THEN-ELSE or CASE statements.
+Data Integrity: It prevents "null propagation" in calculations (where adding a number to a null value usually results in null).
+
+-------
 SELECT 
     customer_name, 
     COALESCE(amount, 0) AS adjusted_amount 
