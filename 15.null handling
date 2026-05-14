@@ -91,5 +91,7 @@ FROM
 
 
 IFNULL
+
+IFNULL fails if more than one arugment compared to COALESCE
   ------
 SELECT customer_name, IFNULL(amount, 0) AS adjusted_amount FROM CustomerData;
