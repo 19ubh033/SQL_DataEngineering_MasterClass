@@ -9,7 +9,7 @@ DDL (Data Definition Language):
 Purpose: Define or modify the structure of the database (e.g., schemas, tables, indexes).
 
 CREATE (to create databases, tables, indexes, etc.)
-ALTER (to modify an existing database object)
+ALTER (to modify an existing database object). A database object simply means any structure that is created and stored inside a database. 
 DROP (to delete objects)
 TRUNCATE (to remove all records from a table)
 RENAME (to rename an object)
