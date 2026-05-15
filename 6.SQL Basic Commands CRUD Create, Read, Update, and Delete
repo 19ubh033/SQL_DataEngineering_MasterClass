@@ -17,7 +17,7 @@ show databases;
    - Selects the `de_project` database for further operations.
 
 3. Create Table:
-   CREATE TABLE test (sno INT, name VARCHAR(100));
+   CREATE TABLE **test** (sno INT, name VARCHAR(100));
    
    - Creates a table `test` with two columns: `sno` (integer) and `name` (string).
 
