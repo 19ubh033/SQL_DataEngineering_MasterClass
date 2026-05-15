@@ -14,15 +14,14 @@ CREATE TABLE Employees (
 
 desc Employees;
 
-ALTER TABLE Employees ADD Email VARCHAR(100);
-
-desc Employees;
-
-alter table Employees drop column LastName;
-
-desc Employees;
+ALTER TABLE Employees
+ADD Email VARCHAR(100);
 
 
-alter table Employees rename to emp_123;
+ALTER TABLE Employees
+DROP column LastName;
 
-desc emp_123;
+
+ALTER TABLE Employees
+RENAME to emp_123;
+
