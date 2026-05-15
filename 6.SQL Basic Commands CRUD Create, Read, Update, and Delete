@@ -17,12 +17,16 @@ show databases;
    - Selects the `de_project` database for further operations.
 
 3. Create Table:
-   CREATE TABLE test (sno INT, name VARCHAR(100));
+   CREATE TABLE test (
+      sno INT,
+      name VARCHAR(100)
+   );
    
    - Creates a table `test` with two columns: `sno` (integer) and `name` (string).
 
 4. Insert Data:
-   INSERT INTO test (sno, name) VALUES (2, 'nandini');
+   INSERT INTO test (sno, name) VALUES 
+   (2, 'nandini');
    
    - Inserts a record into the `test` table with `sno` as 2 and `name` as 'nandini'.
 
@@ -32,13 +36,16 @@ show databases;
    - Retrieves all records from the `test` table.
 
 6. Update Data:
-   UPDATE test SET name = 'sbgowtham', sno = 3 WHERE sno = 1;
+   UPDATE test SET 
+   name = 'sbgowtham', sno = 3
+   WHERE sno = 1;
    
    - Updates the `name` to 'sbgowtham' and `sno` to 3 where `sno` is 1 in the `test` table.
 
 7. Delete Data:
    
-   DELETE FROM test WHERE sno = 3;
+   DELETE FROM test 
+   WHERE sno = 3;
    
    - Deletes the record where `sno` equals 3 from the `test` table.
 
