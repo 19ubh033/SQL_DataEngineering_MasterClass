@@ -28,5 +28,7 @@ jupyter notebook
 %load_ext sql
 %sql mysql+mysqlconnector://root:root@localhost
 
+----MY remarks (Username:Password -- root:root)
+
 %%sql
 show databases;
