@@ -41,4 +41,6 @@ WHERE fare > 500;
 select * from rides
 where 
 fare > '500' and dropoff_location ='Chennai'
-order by fare  ;
+order by fare Asc;
+
+ASC / DESC - ASCENDING OR DESCENDING
