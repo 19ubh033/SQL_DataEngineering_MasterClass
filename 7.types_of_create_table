@@ -20,6 +20,9 @@ CREATE TABLE departments (
     location  VARCHAR(100) NOT NULL
 );
 
+
+--------Null values can be repeated multiple times if only UNIQUE condition is only there------------
+
 -- 3) Create table as select
 CREATE TABLE high_paid_employees AS
 SELECT 
@@ -28,7 +31,18 @@ SELECT
     last_name, 
     salary
 FROM employees
+WHERE salary > 60000);
+
+-----------------or-------------------------------------
+SELECT 
+    employee_id, 
+    first_name, 
+    last_name, 
+    salary
+INTO high_paid_employees
+FROM employees
 WHERE salary > 60000;
+--------------------------------------------------------
 
 -- 4) Temporary table
 CREATE TEMPORARY TABLE temp_high_paid_employees (
