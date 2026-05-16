@@ -20,14 +20,14 @@ CREATE TABLE rides (
 
 
 Insert Data (Valid)
-sql
+
 INSERT INTO rides (ride_id, driver_id, rider_id, pickup_location, dropoff_location, ride_date, fare)
 VALUES
 (1, 101, 201, 'Chennai', 'Coimbatore', '2024-12-29 08:00:00', 500.00);
 
 
 Insert Data (Fails due to duplicate ride_id)
-sql
+
 INSERT INTO rides (ride_id, driver_id, rider_id, pickup_location, dropoff_location, ride_date, fare)
 VALUES
 (1, 102, 202, 'Bangalore', 'Hyderabad', '2024-12-29 10:00:00', 800.00);
@@ -68,8 +68,8 @@ VALUES (5, NULL);  -- Valid, second NULL value is allowed
 
 Explanation:
 You can insert multiple NULL values because NULL is not considered a value in the traditional sense, so they are treated as distinct.
-
 However, non-NULL values must be unique in the column.
+
 In this example:
 
 The email column can have one or more NULL values, but each non-NULL email must be unique.
