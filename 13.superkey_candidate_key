@@ -9,7 +9,7 @@ Primary Key (student_id):
 Definition: The chosen candidate key that uniquely identifies each row and does not allow NULLs.
 Here, student_id is minimal and uniquely identifies each row.
 
-Candidate Key (email or phone):
+Candidate Key (email or phone): Minimality is a property of a candidate key.
 
 Definition: A minimal set of column(s) that uniquely identifies a row.
 In this table, both email and phone are candidate keys because each one, on its own, is unique and minimal.
